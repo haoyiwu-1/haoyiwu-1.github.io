@@ -1,0 +1,7 @@
+body {
+    position: relative;
+}
+
+#home, #proj1, #proj2, #proj3 {
+    padding-top: 65px;
+}
