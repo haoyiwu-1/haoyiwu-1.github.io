@@ -1,7 +1,4 @@
-body {
-    position: relative;
-}
-
-#home, #proj1, #proj2, #proj3 {
+/* to account for the fixed-top navbar offset to help jump between different sections using scrollspy */
+.projects .container-fluid {
     padding-top: 65px;
 }

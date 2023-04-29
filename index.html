@@ -10,22 +10,29 @@
     <title>haoyiwu's Website</title>
 </head>
 
+<!-- body set to scrollable area, scrollspy to auto navigate to section in scrollable area, offset of 65 for fixed-top navbar -->
+
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="65">
+    <!-- fixed top navbar which expands which necessary -->
     <nav id="navbar" class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- collapible navbar -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
+                    <!-- home link -->
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
+                    <!-- project dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Projects
                         </a>
+                        <!-- project dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="#proj1">Basic .NET CRUD App</a></li>
                             <li><a class="dropdown-item" href="#proj2">Basic GPA Calculator</a></li>
@@ -35,22 +42,29 @@
             </div>
         </div>
     </nav>
-    <div id="home" class="container-fluid">
-        <h1>About</h1>
-        <p>I have a BSc (Hons) in Computer Science. This is my portfolio website. There are various projects here which
-            I have created ranging from simple to complex.</p>
-    </div>
-    <div id="proj1" class="container-fluid">
-        <h1>Projects</h1>
-        <h4>.NET CRUD Application</h4>
-        <p>This is a simple CRUD application that I created using the .NET framework.</p>
-    </div>
-    <div id="proj2" class="container-fluid">
-        <h4>Basic GPA Calculator</h4>
-        <p>This is a simple GPA calculator that I created to help me calculate my GPA during my time in University. My
-            University used a 9.0 point scaling system for GPA calculation, but the 4.0 scale is the most commonly used
-            GPA scale so I included that as well in my calculator.</p>
-        <a href="https://haoyiwu-1.github.io/GPACalculator/">Link to GPA Calculator</a>
+    <!-- projects container -->
+    <div class="projects">
+        <!-- home section (top of page) -->
+        <div id="home" class="container-fluid">
+            <h1>About</h1>
+            <p>I have a BSc (Hons) in Computer Science. This is my website. There are various projects here which I have
+                created ranging from simple to complex.</p>
+        </div>
+        <!-- project 1 section -->
+        <div id="proj1" class="container-fluid">
+            <h1>Projects</h1>
+            <h4>.NET CRUD Application</h4>
+            <p>This is a simple CRUD application that I created using the .NET framework.</p>
+        </div>
+        <!-- project 2 section -->
+        <div id="proj2" class="container-fluid">
+            <h4>Basic GPA Calculator</h4>
+            <p>This is a simple GPA calculator that I created to help me calculate my GPA during my time in university.
+                My university used a 9.0 point scaling system for GPA calculation, but the 4.0 scale is the most
+                commonly used GPA scale so I included that in my calculator as well. This GPA calculator was created
+                using HTML, CSS, Bootstrap 5, and some JavaScript.</p>
+            <a href="https://haoyiwu-1.github.io/GPACalculator/">GPA Calculator</a>
+        </div>
     </div>
 </body>
 
