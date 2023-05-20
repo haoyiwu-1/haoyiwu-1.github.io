@@ -12,7 +12,7 @@
 
 <!-- body set to scrollable area, scrollspy to auto navigate to section in scrollable area, offset of 65 for fixed-top navbar -->
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="65">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="54">
     <!-- fixed top navbar which expands which necessary -->
     <nav id="navbar" class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
@@ -34,8 +34,10 @@
                         </a>
                         <!-- project dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#proj1">Basic .NET CRUD App</a></li>
-                            <li><a class="dropdown-item" href="#proj2">Basic GPA Calculator</a></li>
+                            <li><a class="dropdown-item" href="#proj1">Data Mining Project</a></li>
+                            <li><a class="dropdown-item" href="#proj2">Tic-Tac-Toe</a></li>
+                            <li><a class="dropdown-item" href="#proj3">Rock-Paper-Scissors</a></li>
+                            <li><a class="dropdown-item" href="#proj4">Basic GPA Calculator</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -49,24 +51,64 @@
             <h1>About</h1>
             <p>I have a BSc (Hons) in Computer Science. This is my website. There are various projects here which I have
                 created ranging from simple to complex.</p>
+            <p>Languages: Java, Python, VBA, C#, JavaScript, HTML, CSS, SQL</p>
+            <p>Tools & Frameworks: Pandas, Matplotlib, Scikit-learn, Flask, Bootstrap, MySQL, Git, Docker</p>
         </div>
         <!-- project 1 section -->
-        <div id="proj1" class="container-fluid">
-            <h1>Projects</h1>
-            <h4>.NET CRUD Application</h4>
-            <p>This is a simple CRUD application that I created using the .NET framework.</p>
+        <div id="proj2" class="container-fluid">
+            <h4>Data Mining Project</h4>
+            <p>This is a portion of a project I had done for my data mining class. I had to do clustering analysis on a
+                dataset. I chose to do K-Means clustering on the dataset to find hidden relationships between the
+                dimensions of the dataset. There was some pre-processing done on the dataset before it could be used,
+                and many more small details not mentioned here. The link below allows you to access the source code and
+                run it for yourself using Google Colab where the project is described in much more detail. The ipynb
+                file can be download to get a copy of the source code if needed. Created using Pandas, Scikit-learn, and
+                Matplotlib in Python.
+                <br>
+                <a href="https://colab.research.google.com/drive/1Zkyd8Ew9nO5dvCJGr0mvcRVmxpApwalg?usp=sharing"
+                    target="_blank" rel="noreferrer noopener">Data Mining Project</a>
+            </p>
         </div>
         <!-- project 2 section -->
         <div id="proj2" class="container-fluid">
+            <h4>Tic-Tac-Toe</h4>
+            <p>Tic-Tac-Toe for two human players on the same computer. The first player is 'X' and the second player
+                will be 'O'. The game will automatically restart 5 seconds after the game ends or it can be manually
+                reset/restart using the 'Restart/Reset' button. Created using HTML, CSS,
+                Bootstrap 5, and some JavaScript.</p>
+            <br>
+            <a href="https://haoyiwu-1.github.io/Tic-Tac-Toe/" target="_blank" rel="noreferrer noopener">Tic-Tac-Toe</a>
+            <br>
+            <a href="https://github.com/haoyiwu-1/Tic-Tac-Toe" target="_blank" rel="noreferrer noopener">Link to
+                GitHub</a>
+        </div>
+        <!-- project 3 section -->
+        <div id="proj3" class="container-fluid">
+            <h4>Rock-Paper-Scissors</h4>
+            <p>Rock-Paper-Scissors where player is playing against the computer. The computer chooses randomly so there
+                is no intelligence behind it. The game is decided in a best of 5 (first to 3 wins) and the round history
+                is shown. The game will automatically restart 15 seconds after the game ends or it can be manually
+                reset/restart using the 'Restart/Reset' button. Created using HTML, CSS, Bootstrap 5, and some
+                JavaScript.</p>
+            <a href="https://haoyiwu-1.github.io/Rock-Paper-Scissors/" target="_blank"
+                rel="noreferrer noopener">Rock-Paper-Scissors</a>
+            <br>
+            <a href="https://github.com/haoyiwu-1/Rock-Paper-Scissors" target="_blank" rel="noreferrer noopener">Link to
+                GitHub</a>
+        </div>
+        <!-- project 4 section -->
+        <div id="proj4" class="container-fluid">
             <h4>Basic GPA Calculator</h4>
             <p>This is a simple GPA calculator that I created to help me calculate my GPA during my time in university.
                 My university used a 9.0 point scaling system for GPA calculation, but the 4.0 scale is the most
                 commonly used GPA scale so I included that in my calculator as well. This GPA calculator was created
                 using HTML, CSS, Bootstrap 5, and some JavaScript.
                 <br>
-                <a href="https://haoyiwu-1.github.io/GPACalculator/" target="_blank" rel="noreferrer noopener">GPA Calculator</a>
+                <a href="https://haoyiwu-1.github.io/GPACalculator/" target="_blank" rel="noreferrer noopener">GPA
+                    Calculator</a>
                 <br>
-                <a href="https://github.com/haoyiwu-1/GPACalculator" target="_blank" rel="noreferrer noopener">Link to GitHub</a>
+                <a href="https://github.com/haoyiwu-1/GPACalculator" target="_blank" rel="noreferrer noopener">Link to
+                    GitHub</a>
             </p>
         </div>
     </div>

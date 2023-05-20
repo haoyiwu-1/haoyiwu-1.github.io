@@ -1,4 +1,4 @@
 /* to account for the fixed-top navbar offset to help jump between different sections using scrollspy */
-.projects .container-fluid {
-    padding-top: 65px;
+.projects > div {
+    padding-top: 54px;
 }
