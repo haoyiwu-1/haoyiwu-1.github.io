@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbar {
-  @apply flex p-4 font-bold text-xl space-x-6 bg-slate-800 text-white;
+  @apply flex p-3 font-bold text-base space-x-6 bg-slate-800 text-white;
 }
 
 .dropdown-menu {
