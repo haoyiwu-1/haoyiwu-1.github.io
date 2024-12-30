@@ -2,12 +2,10 @@ import Dropdown from "./dropdown";
 
 function Navbar({ projects }) {
   return (
-    <>
-      <div class="navbar">
-        <p>About</p>
-        <Dropdown options={projects} />
-      </div>
-    </>
+    <div className="navbar">
+      <p>About</p>
+      <Dropdown options={projects} />
+    </div>
   )
 }
 

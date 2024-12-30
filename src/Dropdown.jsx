@@ -14,22 +14,20 @@ function Dropdown({ options }) {
   }
 
   return (
-    <>
-      <div className='relative'>
-        <button onClick={toggleDropdown} className="dropdown-button">
-          {selectedOption || 'Projects'}
-        </button>
-        {isOpen && (
-          <ul className="dropdown-menu">
-            {options.map((option, index) => (
-              <li key={index} onClick={() => handleSelect(option)} className="dropdown-item">
-                {option}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </>
+    <div className='relative'>
+      <button onClick={toggleDropdown} className="dropdown-button">
+        {selectedOption || 'Projects'}
+      </button>
+      {isOpen && (
+        <ul className="dropdown-menu">
+          {options.map((option, index) => (
+            <li key={index} onClick={() => handleSelect(option)} className="dropdown-item">
+              {option}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   )
 }
 

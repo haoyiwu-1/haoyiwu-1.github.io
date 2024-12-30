@@ -1,15 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&family=Tiro+Gurmukhi:ital@0;1&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.sora-font {
+  font-family: "Sora", sans-serif;
+}
+
 .navbar {
-  @apply flex p-3 font-bold text-base space-x-6 bg-slate-800 text-white;
+  @apply flex p-4 font-bold text-base space-x-6 text-white bg-gradient-to-r from-cyan-500 to-blue-500 top-0 sticky;
 }
 
 .dropdown-menu {
-  @apply absolute left-0 mt-2 w-48 bg-cyan-800 z-50 rounded-lg;
+  @apply absolute left-0 mt-2 w-48 bg-cyan-500 z-50 rounded-lg border-2 border-white;
 }
 
 .dropdown-item {
-  @apply p-1 hover:bg-cyan-500 rounded-lg;
+  @apply p-1 hover:bg-cyan-400 rounded-lg;
+}
+
+.section {
+  @apply container p-4;
+
+  h1 {
+    @apply text-white;
+  }
+
+  p {
+    @apply text-sm sm:text-base mt-4 text-slate-400;
+  }
 }
