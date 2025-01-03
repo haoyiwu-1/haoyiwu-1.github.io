@@ -26,7 +26,8 @@
     @apply text-white;
   }
 
-  a, p {
+  a,
+  p {
     @apply text-sm sm:text-base mt-4 text-slate-400;
   }
 }

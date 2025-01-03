@@ -1,10 +1,10 @@
-function ProjectDesc({ title, description, links = [] }) {
+function ProjectDesc({ id, title, description, links = [] }) {
   return (
-    <div className="flex flex-col py-4">
+    <div id={id} className="flex flex-col py-4">
       <h1 className="font-bold">{title}</h1>
       <p>{description}</p>
       {links.length > 0 && (
-        <div className="space-y-0">
+        <div className="flex flex-wrap gap-x-3 gap-y-0">
           {
             links.map((link, index) => {
               let Icon;
@@ -25,9 +25,11 @@ function ProjectDesc({ title, description, links = [] }) {
               }
 
               return (
-                <a href={link.source} key={index} target="_blank" rel="noreferrer noopener" className="flex flex-row space-x-2 hover:text-gray-200">
-                  <span>{link.text}</span>
-                  {Icon}
+                <a href={link.source} key={index} target="_blank" rel="noreferrer noopener" className="inline-flex hover:text-gray-200 hover:border-gray-200 p-1 border-2 border-gray-400">
+                  <div className="flex flex-row space-x-2">
+                    <span>{link.text}</span>
+                    {Icon}
+                  </div>
                 </a>
               );
             })}
