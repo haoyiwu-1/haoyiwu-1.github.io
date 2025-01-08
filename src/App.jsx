@@ -1,6 +1,6 @@
-import './index.css'
-import Navbar from './Navbar.jsx';
-import ProjectDesc from './ProjectDesc.jsx';
+import "./index.css";
+import Navbar from "./Navbar.jsx";
+import ProjectDesc from "./ProjectDesc.jsx";
 
 function App() {
   const projectsList = [
@@ -9,8 +9,8 @@ function App() {
     "SmartShoppers",
     "Tic-Tac-Toe",
     "Rock-Paper-Scissors",
-    "Basic GPA Calculator"
-  ]
+    "Basic GPA Calculator",
+  ];
 
   return (
     <div className="bg-gradient-to-r from-cyan-900 to-blue-900 sora-font min-h-screen">
@@ -23,9 +23,22 @@ function App() {
         <div className="space-y-16">
           <div id="about" className="section">
             <h1 className="uppercase font-bold">About</h1>
-            <p>I'm a developer in the early stages of my career, eager to expand my skill set and deepen my understanding of the tech industry. I have a Honours Bachelor of Science in Computer Science, providing me with a strong foundation in algortihms, software development, and problem solving.</p>
-            <p>In the past, I've worked at two startups where I contributed to the development of web applications integrated with AI technologies.</p>
-            <p>Outside of work, you can find me at the gym, setting new PRs and achieving my fitness goals, or spending quality time with my cat.</p>
+            <p>
+              I'm a developer in the early stages of my career, eager to expand
+              my skill set and deepen my understanding of the tech industry. I
+              have a Honours Bachelor of Science in Computer Science, providing
+              me with a strong foundation in algortihms, software development,
+              and problem solving.
+            </p>
+            <p>
+              In the past, I've worked at two startups where I contributed to
+              the development of web applications integrated with AI
+              technologies.
+            </p>
+            <p>
+              Outside of work, you can find me at the gym, setting new PRs and
+              achieving my fitness goals, or spending quality time with my cat.
+            </p>
           </div>
           <div className="section">
             <h1 className="uppercase font-bold">Experience</h1>
@@ -40,9 +53,10 @@ function App() {
               "
               links={[
                 {
-                  source: "https://colab.research.google.com/drive/1Zkyd8Ew9nO5dvCJGr0mvcRVmxpApwalg?usp=sharing",
-                  text: "Live Demo"
-                }
+                  source:
+                    "https://colab.research.google.com/drive/1Zkyd8Ew9nO5dvCJGr0mvcRVmxpApwalg?usp=sharing",
+                  text: "Live Demo",
+                },
               ]}
             />
 
@@ -55,12 +69,13 @@ function App() {
               links={[
                 {
                   source: "https://github.com/haoyiwu-1/BigDataAnalytics",
-                  text: "GitHub"
+                  text: "GitHub",
                 },
                 {
-                  source: "https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset/versions/3",
-                  text: "Kaggle Dataset"
-                }
+                  source:
+                    "https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset/versions/3",
+                  text: "Kaggle Dataset",
+                },
               ]}
             />
 
@@ -72,17 +87,19 @@ function App() {
               "
               links={[
                 {
-                  source: "https://haoyiwu-1.github.io/resources/SmartShoppersApp.jar",
-                  text: "Jar file"
+                  source:
+                    "https://haoyiwu-1.github.io/resources/SmartShoppersApp.jar",
+                  text: "Jar file",
                 },
                 {
-                  source: "https://haoyiwu-1.github.io/resources/SmartShoppers.exe",
-                  text: "Executable file"
+                  source:
+                    "https://haoyiwu-1.github.io/resources/SmartShoppers.exe",
+                  text: "Executable file",
                 },
                 {
                   source: "https://github.com/haoyiwu-1/SmartShoppers",
-                  text: "GitHub"
-                }
+                  text: "GitHub",
+                },
               ]}
             />
 
@@ -95,12 +112,12 @@ function App() {
               links={[
                 {
                   source: "https://haoyiwu-1.github.io/Tic-Tac-Toe/",
-                  text: "Live Demo"
+                  text: "Live Demo",
                 },
                 {
                   source: "https://github.com/haoyiwu-1/Tic-Tac-Toe",
-                  text: "GitHub"
-                }
+                  text: "GitHub",
+                },
               ]}
             />
 
@@ -113,12 +130,12 @@ function App() {
               links={[
                 {
                   source: "https://haoyiwu-1.github.io/Rock-Paper-Scissors/",
-                  text: "Live Demo"
+                  text: "Live Demo",
                 },
                 {
                   source: "https://github.com/haoyiwu-1/Rock-Paper-Scissors",
-                  text: "GitHub"
-                }
+                  text: "GitHub",
+                },
               ]}
             />
 
@@ -131,19 +148,19 @@ function App() {
               links={[
                 {
                   source: "https://haoyiwu-1.github.io/GPACalculator/",
-                  text: "Live Demo"
+                  text: "Live Demo",
                 },
                 {
                   source: "https://github.com/haoyiwu-1/GPACalculator",
-                  text: "GitHub"
-                }
+                  text: "GitHub",
+                },
               ]}
             />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
