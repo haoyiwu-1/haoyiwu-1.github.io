@@ -12,7 +12,7 @@
 }
 
 .dropdown-menu {
-  @apply absolute left-0 mt-2 w-48 bg-cyan-500 z-50 rounded-lg border-2 border-white;
+  @apply absolute left-[-120px] min-[425px]:left-0 mt-2 w-48 bg-cyan-500 z-50 rounded-lg border-2 border-white;
 }
 
 .dropdown-item {

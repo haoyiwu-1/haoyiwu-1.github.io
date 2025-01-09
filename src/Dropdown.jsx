@@ -13,7 +13,7 @@ function Dropdown({ options }) {
     const element = document.getElementById("proj-" + index);
     if (element) {
       element.scrollIntoView({ behaviour: "smooth" });
-      window.scrollBy(0, -56);
+      window.scrollBy(0, -36);
     }
     setIsOpen(false);
   };

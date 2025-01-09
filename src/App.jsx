@@ -13,9 +13,9 @@ function App() {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-cyan-900 to-blue-900 sora-font min-h-screen">
+    <div className="bg-gradient-to-r from-cyan-900 to-blue-900 sora-font min-h-screen flex flex-col">
       <Navbar projects={projectsList} />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center flex-grow">
         <div className="section space-y-3">
           <h1 className="font-bold text-3xl">WenHao Wu</h1>
           <h1 className="font-bold text-xl">Web Developer</h1>
@@ -41,7 +41,7 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="section">
+          <div id="experience" className="section">
             <h1 className="uppercase font-bold">Experience</h1>
           </div>
           <div className="section">
@@ -165,6 +165,14 @@ function App() {
             />
           </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center py-8">
+        <footer className="section text-white text-xs sm:text-sm max-w-sm">
+          <p>
+            Created with love using <span className="text-white">React</span>{" "}
+            and <span className="text-white">Tailwind CSS</span>.
+          </p>
+        </footer>
       </div>
     </div>
   );
