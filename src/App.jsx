@@ -23,22 +23,23 @@ function App() {
         <div className="space-y-16">
           <div id="about" className="section">
             <h1 className="uppercase font-bold">About</h1>
-            <p>
-              I'm a developer in the early stages of my career, eager to expand
-              my skill set and deepen my understanding of the tech industry. I
-              have a Honours Bachelor of Science in Computer Science, providing
-              me with a strong foundation in algortihms, software development,
-              and problem solving.
-            </p>
-            <p>
-              In the past, I've worked at two startups where I contributed to
-              the development of web applications integrated with AI
-              technologies.
-            </p>
-            <p>
-              Outside of work, you can find me at the gym, setting new PRs and
-              achieving my fitness goals, or spending quality time with my cat.
-            </p>
+            <div className="mt-4 space-y-3">
+              <p>
+                I'm an early-career developer passionate about expanding my
+                skill set and deepening my understanding of the tech industry. I
+                hold an Honours Bachelor of Science in Computer Science, which
+                has equipped me with a solid foundation in algorithms, software
+                development, and problem solving.
+              </p>
+              <p>
+                In the past, I've contributed to two startups where I helped
+                develop web applications integrated with AI technologies.
+              </p>
+              <p>
+                Outside of work, I'm often at the gym setting new personal
+                records or spending quality time with my cat.
+              </p>
+            </div>
           </div>
           <div className="section">
             <h1 className="uppercase font-bold">Experience</h1>
@@ -49,7 +50,7 @@ function App() {
               id="proj-0"
               title={projectsList[0]}
               description="
-              This is a portion of a project I had done for my data mining class. I had to do clustering analysis on a dataset. I chose to do K-Means clustering on the dataset to find hidden relationships between the dimensions of the dataset. There was some pre-processing done on the dataset before it could be used, and many more small details not mentioned here. The link below allows you to access the source code and run it for yourself using Google Colab where the project is described in much more detail. The ipynb file can be download to get a copy of the source code if needed.
+              This is a portion of a project I completed for my data mining class, where I performed clustering analysis on a dataset. I used K-Means clustering to uncover hidden relationships between the dataset's dimensions. Some pre-processing was required before the dataset could be used, along with other smaller details not mentioned here. The link below provides access to the source code, which can be run on Google Colab. The project is described in much more detail there, and you can download the .ipynb file for a copy of the source code if needed.
               "
               links={[
                 {
@@ -65,7 +66,7 @@ function App() {
               id="proj-1"
               title={projectsList[1]}
               description="
-              This was a project which involves big data analytics using Python on a single machine. The dataset which the analytics were performed on were a subset of Yelp's businesses, review, and user data. For this project, I created four programs to perform big data analytics on the dataset mentioned above. The first program (descriptive-analytics.py) does descriptive analytics on the dataset. The second program (frequency-distributions.py) computes useful frequency distributions from the dataset. The third program (social-network.py) performs-basic network analytics on the constructed social network from the third program. To find out how to use and explore the programs please refer to the GitHub link below.
+              This project involves big data analytics using Python on a single machine. The analytics were performed on a subset of Yelp's business, review, and user data. I developed four programs to analyze the dataset. The first program, descriptive-analytics.py, performs descriptive analytics on the dataset. The second program, frequency-distributions.py, computes useful frequency distributions from the data. The third program, social-network.py, creates a social network of Yelp friends from the data. The fourth and final program, network-analytics.py, performs basic network analytics on the constructed social network from the third program. For instructions on how to use and explore the programs, please refer to the GitHub link below.
               "
               links={[
                 {
@@ -85,7 +86,7 @@ function App() {
               id="proj-2"
               title={projectsList[2]}
               description="
-              This was an application that I created for my software design class. The purpose of the project was to implement a system that we designed beforehand using some software design patterns. The front-end is very basic as it wasn't the focus for this project and because of time constraints. The application allows users to browse items in stores, and managers and administrators to manage said stores. There was no requirement for the use of a database, so I utilized serialization and text files to mimic a database. As this project was for a software design class, the emphasis was on the software design and not the functionality of the application so input validation was not necessary, so reasonable and logical inputs work best when exploring this application. Created the front-end using Java Swing, and obviously Java was used for the back-end. Testing of the application was done using test cases in JUnit to cover all back-end functionality and to help discover any possible bugs.
+              This application was created for my software design class, where the goal was to implement a system based on a design  we developed using software design patterns. The front-end is basic, as the focus of the project was on software design, and time constraints limited its development. The app allows users to browse items in stores, and store managers and administrators to manage those stores. Without a requirement for a database, I used serialization and text files to simulate one. Input validation was not a focus, so reasonable inputs work best when exploring the app. The front-end was developed using Java Swing, with Java powering the back-end. I tested the application with JUnit test cases to cover all back-end functionality and identify potential bugs.
               "
               links={[
                 {
@@ -110,7 +111,7 @@ function App() {
               id="proj-3"
               title={projectsList[3]}
               description="
-              Tic-Tac-Toe for two human players on the same computer. The first player is 'X' and the second player will be 'O'. The game will automatically restart 5 seconds after the game ends or it can be manually reset/restart using the 'Restart/Reset' button.
+              Tic-Tac-Toe for two players on the same computer. The first player is 'X' and the second player is 'O'. The game automatically restarts 5 seconds after it ends, or players can manually reset/restart it using the 'Restart/Reset' button.
               "
               links={[
                 {
@@ -129,7 +130,7 @@ function App() {
               id="proj-4"
               title={projectsList[4]}
               description="
-              Rock-Paper-Scissors where player is playing against the computer. The computer chooses randomly so there is no intelligence behind it. The game is decided in a best of 5 (first to 3 wins) and the round history is shown. The game will automatically restart 15 seconds after the game ends or it can be manually reset/restart using the 'Restart/Reset' button.
+              Rock-Paper-Scissors where player competes against the computer, which makes random choices with no underlying logic/intelligence. The game is played in a best-of-5 format (first to three wins), with the round history displayed. After the game ends, it automatically restarts  after 15 seconds, or players can manually reset/restart it using the 'Restart/Reset' button.
               "
               links={[
                 {
@@ -148,7 +149,7 @@ function App() {
               id="proj-5"
               title={projectsList[5]}
               description="
-              This is a simple GPA calculator that I created to help me calculate my GPA during my time in university. My university used a 9.0 point scaling system for GPA calculation, but the 4.0 scale is the most commonly used GPA scale so I included that in my calculator as well.
+              This is a simple GPA calculator I created during university to calculate my GPA. My university used a 9.0-point scale, but I also included the more commonly used 4.0 scale for broader applicability. I updated the calculator to make it more visually appealing and mobile-friendly, enhancing its usability across devices.
               "
               links={[
                 {
