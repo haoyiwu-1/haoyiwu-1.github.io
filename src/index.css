@@ -28,6 +28,6 @@
 
   a,
   p {
-    @apply text-sm sm:text-base mt-4 text-slate-400;
+    @apply text-sm sm:text-base text-slate-400;
   }
 }
