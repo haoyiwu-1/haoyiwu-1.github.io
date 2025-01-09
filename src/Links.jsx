@@ -46,7 +46,7 @@ function Links({ linksList }) {
               key={index}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex hover:text-gray-200 hover:border-gray-200 p-1 border-2 border-gray-400"
+              className="inline-flex hover:text-gray-200 my-1 hover:border-gray-200 p-1 border-2 border-gray-400"
             >
               <div className="flex flex-row space-x-2">
                 <span>{link.text}</span>

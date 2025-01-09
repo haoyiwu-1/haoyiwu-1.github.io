@@ -1,6 +1,6 @@
 import "./index.css";
 import Navbar from "./Navbar.jsx";
-import ProjectDesc from "./ProjectDesc.jsx";
+import SectionDesc from "./SectionDesc.jsx";
 
 function App() {
   const projectsList = [
@@ -43,10 +43,45 @@ function App() {
           </div>
           <div id="experience" className="section">
             <h1 className="uppercase font-bold">Experience</h1>
+            <SectionDesc
+              id="exp-1"
+              title={
+                <>
+                  Web Developer <span className="font-sans mx-1">&#x2022;</span>{" "}
+                  Shopr Live Inc.
+                </>
+              }
+              description="
+              Enhanced the end-user experience by implementing responsive UI features. Translated Figma designs into functional and user-friendly product pages. Optimized site performance through lazy loading, CSS sprite sheets, and image compression, achieving faster page load times.
+              "
+              tech={[
+                "Ruby",
+                "Ruby on Rails",
+                "JavaScript",
+                "Stimulus.js",
+                "Tailwind CSS",
+                "HTML",
+              ]}
+              timePeriod={"June 2023 - June 2024"}
+            />
+            <SectionDesc
+              id="exp-2"
+              title={
+                <>
+                  Web Developer <span className="font-sans mx-1">&#x2022;</span>{" "}
+                  Convia
+                </>
+              }
+              description="
+              Developed UI features with a focus on performance and cross-device compatibility. Optimized site responsiveness by implementing responsive design principles, ensuring a seamless user experience across all screen sizes.
+              "
+              tech={["Elixir", "JavaScript", "Tailwind CSS"]}
+              timePeriod={"Oct 2024 - Dec 2024"}
+            />
           </div>
           <div className="section">
             <h1 className="uppercase font-bold">Projects</h1>
-            <ProjectDesc
+            <SectionDesc
               id="proj-0"
               title={projectsList[0]}
               description="
@@ -62,7 +97,7 @@ function App() {
               tech={["Pandas", "Scikit-learn", "Matplotlib", "Python"]}
             />
 
-            <ProjectDesc
+            <SectionDesc
               id="proj-1"
               title={projectsList[1]}
               description="
@@ -82,7 +117,7 @@ function App() {
               tech={["Pandas", "networkx", "Matplotlib", "Python"]}
             />
 
-            <ProjectDesc
+            <SectionDesc
               id="proj-2"
               title={projectsList[2]}
               description="
@@ -107,7 +142,7 @@ function App() {
               tech={["Java Swing", "Java", "JUnit"]}
             />
 
-            <ProjectDesc
+            <SectionDesc
               id="proj-3"
               title={projectsList[3]}
               description="
@@ -126,7 +161,7 @@ function App() {
               tech={["HTML", "CSS", "Bootstrap 5", "JavaScript"]}
             />
 
-            <ProjectDesc
+            <SectionDesc
               id="proj-4"
               title={projectsList[4]}
               description="
@@ -145,7 +180,7 @@ function App() {
               tech={["HTML", "CSS", "Bootstrap 5", "JavaScript"]}
             />
 
-            <ProjectDesc
+            <SectionDesc
               id="proj-5"
               title={projectsList[5]}
               description="
