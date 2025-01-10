@@ -126,12 +126,12 @@ function App() {
               links={[
                 {
                   source:
-                    "https://haoyiwu-1.github.io/resources/SmartShoppersApp.jar",
+                    "https://haoyiwu-1.github.io/old-portfolio/resources/SmartShoppersApp.jar",
                   text: "Jar file",
                 },
                 {
                   source:
-                    "https://haoyiwu-1.github.io/resources/SmartShoppers.exe",
+                    "https://haoyiwu-1.github.io/old-portfolio/resources/SmartShoppers.exe",
                   text: "Executable file",
                 },
                 {
