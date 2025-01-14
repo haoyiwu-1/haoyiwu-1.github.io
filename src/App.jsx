@@ -221,6 +221,16 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="flex flex-col items-center justify-center py-8">
+        <img
+          src="/resources/Cat.jpg"
+          alt="Cat"
+          className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-lg px-4"
+        />
+        <div className="py-2 text-center text-lg text-white">
+          <p>Picture of my cat</p>
+        </div>
+      </div>
       <div className="flex flex-col items-center py-8">
         <footer className="section text-white text-xs sm:text-sm max-w-sm space-y-3">
           <div className="flex flex-row space-x-3">
