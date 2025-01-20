@@ -16,7 +16,7 @@
 }
 
 .dropdown-item {
-  @apply p-1 hover:bg-cyan-400 rounded-lg break-words;
+  @apply p-1 hover:bg-cyan-600 text-hover rounded-lg break-words;
 }
 
 .section {
@@ -27,11 +27,15 @@
   }
 
   .title-link {
-    @apply text-white hover:text-orange-500 flex flex-row space-x-1;
+    @apply text-white flex flex-row space-x-1 text-hover;
   }
 
   a,
   p {
     @apply text-sm sm:text-base text-slate-400;
   }
+}
+
+.text-hover {
+  @apply hover:text-[#9cff89];
 }

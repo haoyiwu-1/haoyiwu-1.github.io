@@ -19,8 +19,12 @@ function Navbar({ projects }) {
 
   return (
     <div className="navbar">
-      <button onClick={handleAboutClick}>About</button>
-      <button onClick={handleExperience}>Experience</button>
+      <button onClick={handleAboutClick} className="text-hover">
+        About
+      </button>
+      <button onClick={handleExperience} className="text-hover">
+        Experience
+      </button>
       <Dropdown options={projects} />
     </div>
   );

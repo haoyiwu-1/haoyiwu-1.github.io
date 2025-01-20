@@ -40,7 +40,7 @@ function Dropdown({ options }) {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="dropdown-button"
+        className="dropdown-button text-hover"
         ref={buttonRef}
       >
         {"Projects"}
