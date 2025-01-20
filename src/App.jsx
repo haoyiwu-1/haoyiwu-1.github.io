@@ -52,6 +52,7 @@ function App() {
                   Shopr Live Inc.
                 </>
               }
+              titleLink="https://askshopr.com/"
               description="
               Enhanced the end-user experience by implementing responsive UI features. Translated Figma designs into functional and user-friendly product pages. Optimized site performance through lazy loading, CSS sprite sheets, and image compression, achieving faster page load times.
               "
@@ -73,6 +74,7 @@ function App() {
                   Convia
                 </>
               }
+              titleLink="https://convia.io/"
               description="
               Developed UI features with a focus on performance and cross-device compatibility. Optimized site responsiveness by implementing responsive design principles, ensuring a seamless user experience across all screen sizes.
               "
@@ -86,7 +88,7 @@ function App() {
               id="proj-0"
               title={projectsList[0]}
               description="
-              A responsive cryptocurrency tracking web app providing up-to-date data on popular cryptocurrencies, with updates every minute for near real-time tracking. Its clean and user-friendly design ensures optimal performance across all devices.
+              A responsive cryptocurrency tracking web app providing up-to-date data on popular cryptocurrencies, with updates every minute for near real-time tracking. Its clean and user-friendly design ensures optimal performance across all devices, featuring a dark mode for enhanced usability and customizable viewing preferences.
               "
               links={[
                 {
