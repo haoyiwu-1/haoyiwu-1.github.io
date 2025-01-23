@@ -5,6 +5,7 @@ import SectionDesc from "./SectionDesc.jsx";
 function App() {
   const projectsList = [
     "React Crypto Web App",
+    "Trivify",
     "Big Data Analytics Project",
     "Data Mining Project",
     "SmartShoppers",
@@ -88,7 +89,7 @@ function App() {
               id="proj-0"
               title={projectsList[0]}
               description="
-              A responsive cryptocurrency tracking web app providing up-to-date data on popular cryptocurrencies, with updates every minute for near real-time tracking. Its clean and user-friendly design ensures optimal performance across all devices, featuring a dark mode for enhanced usability and customizable viewing preferences.
+              A responsive cryptocurrency tracking web app providing up-to-date data on popular cryptocurrencies, with updates every minute for near real-time tracking. It has a clean and user-friendly design that ensures optimal performance across all devices, featuring a dark mode for enhanced usability and customizable viewing preferences.
               "
               links={[
                 {
@@ -100,12 +101,37 @@ function App() {
                   text: "GitHub",
                 },
               ]}
-              tech={["React", "Tailwind CSS"]}
+              tech={["React", "Tailwind CSS", "CoinCap API 2.0"]}
             />
 
             <SectionDesc
               id="proj-1"
               title={projectsList[1]}
+              description="
+              A trivia quiz web app delivering an engaging quiz experience with dynamic questions sourced from the Open Trivia Database API. Featuring a clean, user-friendly design and interactive elements, it provides a smooth and enjoyable user experience. The app is optimized for seamless performance across devices, ensuring a fully responsive interface.
+              "
+              links={[
+                {
+                  source: "https://haoyiwu-1.github.io/Trivify/",
+                  text: "Live Demo",
+                },
+                {
+                  source: "https://github.com/haoyiwu-1/Trivify",
+                  text: "GitHub",
+                },
+              ]}
+              tech={[
+                "React",
+                "Material UI",
+                "React Hook Form",
+                "Tailwind CSS",
+                "Open Trivia Database API",
+              ]}
+            />
+
+            <SectionDesc
+              id="proj-2"
+              title={projectsList[2]}
               description="
               This project involves big data analytics using Python on a single machine. The analytics were performed on a subset of Yelp's business, review, and user data. I developed four programs to analyze the dataset. The first program, descriptive-analytics.py, performs descriptive analytics on the dataset. The second program, frequency-distributions.py, computes useful frequency distributions from the data. The third program, social-network.py, creates a social network of Yelp friends from the data. The fourth and final program, network-analytics.py, performs basic network analytics on the constructed social network from the third program. For instructions on how to use and explore the programs, please refer to the GitHub link below.
               "
@@ -124,8 +150,8 @@ function App() {
             />
 
             <SectionDesc
-              id="proj-2"
-              title={projectsList[2]}
+              id="proj-3"
+              title={projectsList[3]}
               description="
               This is a portion of a project I completed for my data mining class, where I performed clustering analysis on a dataset. I used K-Means clustering to uncover hidden relationships between the dataset's dimensions. Some pre-processing was required before the dataset could be used, along with other smaller details not mentioned here. The link below provides access to the source code, which can be run on Google Colab. The project is described in much more detail there, and you can download the .ipynb file for a copy of the source code if needed.
               "
@@ -140,8 +166,8 @@ function App() {
             />
 
             <SectionDesc
-              id="proj-3"
-              title={projectsList[3]}
+              id="proj-4"
+              title={projectsList[4]}
               description="
               This application was created for my software design class, where the goal was to implement a system based on a design  we developed using software design patterns. The front-end is basic, as the focus of the project was on software design, and time constraints limited its development. The app allows users to browse items in stores, and store managers and administrators to manage those stores. Without a requirement for a database, I used serialization and text files to simulate one. Input validation was not a focus, so reasonable inputs work best when exploring the app. The front-end was developed using Java Swing, with Java powering the back-end. I tested the application with JUnit test cases to cover all back-end functionality and identify potential bugs.
               "
@@ -165,8 +191,8 @@ function App() {
             />
 
             <SectionDesc
-              id="proj-4"
-              title={projectsList[4]}
+              id="proj-5"
+              title={projectsList[5]}
               description="
               Tic-Tac-Toe for two players on the same computer. The first player is 'X' and the second player is 'O'. The game automatically restarts 5 seconds after it ends, or players can manually reset/restart it using the 'Restart/Reset' button.
               "
@@ -184,8 +210,8 @@ function App() {
             />
 
             <SectionDesc
-              id="proj-5"
-              title={projectsList[5]}
+              id="proj-6"
+              title={projectsList[6]}
               description="
               This is a simple GPA calculator I created during university to calculate my GPA. My university used a 9.0-point scale, but I also included the more commonly used 4.0 scale for broader applicability. I updated the calculator to make it more visually appealing and mobile-friendly, enhancing its usability across devices.
               "
@@ -203,8 +229,8 @@ function App() {
             />
 
             <SectionDesc
-              id="proj-6"
-              title={projectsList[6]}
+              id="proj-7"
+              title={projectsList[7]}
               description="
               Rock-Paper-Scissors where player competes against the computer, which makes random choices with no underlying logic/intelligence. The game is played in a best-of-5 format (first to three wins), with the round history displayed. After the game ends, it automatically restarts  after 15 seconds, or players can manually reset/restart it using the 'Restart/Reset' button.
               "
