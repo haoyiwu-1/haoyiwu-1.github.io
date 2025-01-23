@@ -82,7 +82,25 @@ function App() {
               tech={["Elixir", "JavaScript", "Tailwind CSS"]}
               timePeriod={"Oct 2024 - Dec 2024"}
             />
+            <a
+              className="flex flex-row space-x-2 font-bold underline"
+              href="resources/Resume_-_WenHao_Wu.pdf"
+              target="_blank"
+            >
+              <h1 className="text-hover">Resume</h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#FFFFFF"
+                className="size-6"
+              >
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+              </svg>
+            </a>
           </div>
+
           <div className="section">
             <h1 className="uppercase font-bold">Projects</h1>
             <SectionDesc
