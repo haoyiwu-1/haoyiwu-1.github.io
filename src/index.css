@@ -27,7 +27,7 @@
   }
 
   .title-link {
-    @apply text-white flex flex-row space-x-1 text-hover;
+    @apply text-white flex flex-row space-x-1 text-hover max-w-max;
   }
 
   a,

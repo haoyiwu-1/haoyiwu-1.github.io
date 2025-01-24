@@ -83,7 +83,7 @@ function App() {
               timePeriod={"Oct 2024 - Dec 2024"}
             />
             <a
-              className="flex flex-row space-x-2 font-bold underline"
+              className="flex flex-row space-x-2 font-bold underline max-w-max"
               href="resources/Resume_-_WenHao_Wu.pdf"
               target="_blank"
             >
@@ -94,7 +94,7 @@ function App() {
                 viewBox="0 -960 960 960"
                 width="24px"
                 fill="#FFFFFF"
-                className="size-6"
+                className="size-5 sm:size-6"
               >
                 <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
               </svg>
