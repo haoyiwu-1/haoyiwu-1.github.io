@@ -107,7 +107,7 @@ function App() {
               id="proj-0"
               title={projectsList[0]}
               description="
-              A responsive cryptocurrency tracking web app providing up-to-date data on popular cryptocurrencies, with updates every minute for near real-time tracking. It has a clean and user-friendly design that ensures optimal performance across all devices, featuring a dark mode for enhanced usability and customizable viewing preferences.
+              A responsive web app delivering up-to-date data on popular cryptocurrencies, updating every minute for near real-time tracking. It features a clean, user-friendly design optimized for all devices, with a dark mode for enhanced usability and customizable viewing preferences. GitHub Workflows is configured for automated deployment, ensuring efficient updates and keeping the app current with minimal effort.
               "
               links={[
                 {
@@ -126,7 +126,7 @@ function App() {
               id="proj-1"
               title={projectsList[1]}
               description="
-              A trivia quiz web app delivering an engaging quiz experience with dynamic questions sourced from the Open Trivia Database API. Featuring a clean, user-friendly design and interactive elements, it provides a smooth and enjoyable user experience. The app is optimized for seamless performance across devices, ensuring a fully responsive interface.
+              An engaging trivia quiz web app with dynamic questions sourced from the Open Trivia Database API. Designed with a clean, user-friendly interface and interactive features, it offers a smooth and enjoyable user experience. Optimized for seamless performance across devices, the app provides a fully responsive interface. GitHub Workflows is set up to automate deployments, streamlining updates and ensuring the app remains consistently up to date.
               "
               links={[
                 {
@@ -143,6 +143,7 @@ function App() {
                 "Material UI",
                 "React Hook Form",
                 "Tailwind CSS",
+                "he",
                 "Open Trivia Database API",
               ]}
             />
