@@ -1,6 +1,6 @@
 import "./index.css";
-import Navbar from "./Navbar.jsx";
-import SectionDesc from "./SectionDesc.jsx";
+import Navbar from "./Components/Navbar.jsx";
+import SectionDesc from "./Components/SectionDesc.jsx";
 
 function App() {
   const projectsList = [
