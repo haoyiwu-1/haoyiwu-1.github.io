@@ -55,17 +55,20 @@ function Dropdown({ options }) {
       </button>
 
       {isOpen && (
-        <ul className="dropdown-menu-projects">
-          {options.map((option, index) => (
-            <li
-              key={index}
-              onClick={() => handleSelection(index)}
-              className="dropdown-item"
-            >
-              {option}
-            </li>
-          ))}
-        </ul>
+        <>
+          <div className="overlay" onClick={() => setIsOpen(false)}></div>
+          <ul className="dropdown-menu-projects">
+            {options.map((option, index) => (
+              <li
+                key={index}
+                onClick={() => handleSelection(index)}
+                className="dropdown-item"
+              >
+                {option}
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </div>
   );

@@ -8,7 +8,7 @@ function Projects({ projects }) {
       <Navbar projects={projects} />
       <div className="flex flex-col items-center flex-grow">
         <div className="section">
-          <h1 className="uppercase font-bold">Projects</h1>
+          <h1 className="uppercase font-bold text-3xl">All Projects</h1>
           <SectionDesc
             id="proj-0"
             title={projects[0]}
@@ -172,6 +172,13 @@ function Projects({ projects }) {
             tech={["HTML", "CSS", "Bootstrap 5", "JavaScript"]}
           />
         </div>
+      </div>
+      <div className="flex flex-col space-y-6 text-center text-white py-20 sm:py-24 md:py-28 lg:py-32 2xl:py-48 px-4">
+        <h1 className="text-4xl">More Projects Coming Soon!</h1>
+        <p className="text-xl">
+          Currently working on exciting things. Come back soon to see what I've
+          been up to!
+        </p>
       </div>
       <Footer />
     </div>

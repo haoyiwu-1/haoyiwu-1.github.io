@@ -41,6 +41,7 @@ function SectionDesc({
       <p>{description}</p>
       {links.length > 0 && <Links linksList={links} />}
       {tech.length > 0 && <TechBadges techList={tech} />}
+      <hr />
     </div>
   );
 }

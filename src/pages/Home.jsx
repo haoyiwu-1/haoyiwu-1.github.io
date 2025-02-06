@@ -9,7 +9,7 @@ function Home({ projects }) {
       <div className="flex flex-col items-center flex-grow">
         <div className="section space-y-3">
           <h1 className="font-bold text-3xl">WenHao Wu</h1>
-          <h1 className="font-bold text-xl">Web Developer</h1>
+          <h1 className="font-bold text-xl">Software Developer</h1>
         </div>
         <div className="space-y-16">
           <div id="about" className="section">
