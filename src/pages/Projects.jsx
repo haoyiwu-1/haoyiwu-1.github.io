@@ -1,6 +1,6 @@
-import Footer from "../components/Footer.jsx";
-import Navbar from "../components/Navbar.jsx";
-import SectionDesc from "../components/SectionDesc.jsx";
+import Footer from "../ui-components/Footer.jsx";
+import Navbar from "../ui-components/Navbar.jsx";
+import SectionDesc from "../ui-components/SectionDesc.jsx";
 
 function Projects({ projects }) {
   return (

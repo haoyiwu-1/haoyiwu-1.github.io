@@ -1,9 +1,14 @@
 import { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 function Dropdown({ options }) {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
+
+  const isHomePage = location.pathname === "/";
+  const isProjectsPage = location.pathname === "/projects";
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -45,8 +50,22 @@ function Dropdown({ options }) {
       >
         {"Projects"}
       </button>
-      {isOpen && (
-        <ul className="dropdown-menu">
+      {isOpen && isHomePage && (
+        <ul className="dropdown-menu-home">
+          {options.map((option, index) => (
+            <li
+              key={index}
+              onClick={() => handleSelection(index)}
+              className="dropdown-item"
+            >
+              {option}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {isOpen && isProjectsPage && (
+        <ul className="dropdown-menu-projects">
           {options.map((option, index) => (
             <li
               key={index}
