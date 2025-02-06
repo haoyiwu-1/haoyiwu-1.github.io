@@ -7,9 +7,6 @@ function Dropdown({ options }) {
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
 
-  const isHomePage = location.pathname === "/";
-  const isProjectsPage = location.pathname === "/projects";
-
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -36,10 +33,16 @@ function Dropdown({ options }) {
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "auto";
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -50,21 +53,8 @@ function Dropdown({ options }) {
       >
         {"Projects"}
       </button>
-      {isOpen && isHomePage && (
-        <ul className="dropdown-menu-home">
-          {options.map((option, index) => (
-            <li
-              key={index}
-              onClick={() => handleSelection(index)}
-              className="dropdown-item"
-            >
-              {option}
-            </li>
-          ))}
-        </ul>
-      )}
 
-      {isOpen && isProjectsPage && (
+      {isOpen && (
         <ul className="dropdown-menu-projects">
           {options.map((option, index) => (
             <li

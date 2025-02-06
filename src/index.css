@@ -11,13 +11,26 @@
   @apply flex p-4 font-bold text-base space-x-6 text-white bg-gradient-to-r from-cyan-500 to-blue-500 top-0 sticky;
 }
 
-.dropdown-menu-home,
 .dropdown-menu-projects {
-  @apply absolute min-[425px]:left-0 mt-2 w-48 bg-cyan-500 z-50 rounded-lg border-2 border-white;
+  @apply absolute min-[425px]:left-0 mt-2 w-48 bg-cyan-500 z-50 rounded-lg border-2 border-white overflow-auto max-h-[300px];
 }
 
-.dropdown-menu-home {
-  @apply left-[-120px];
+.dropdown-menu-projects::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dropdown-menu-projects::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+.dropdown-menu-projects::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 10px;
+}
+
+.dropdown-menu-projects::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .dropdown-menu-projects {

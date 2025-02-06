@@ -90,7 +90,7 @@ function Home({ projects }) {
             </a>
           </div>
 
-          <div className="section">
+          <div id="projects" className="section">
             <h1 className="uppercase font-bold">Projects</h1>
             <SectionDesc
               id="proj-0"

@@ -12,8 +12,16 @@ function Navbar({ projects }) {
     }
   };
 
-  const handleExperience = () => {
+  const handleExperienceClick = () => {
     const element = document.getElementById("experience");
+    if (element) {
+      element.scrollIntoView({ behaviour: "smooth" });
+      window.scrollBy(0, -56);
+    }
+  };
+
+  const handleProjectsClick = () => {
+    const element = document.getElementById("projects");
     if (element) {
       element.scrollIntoView({ behaviour: "smooth" });
       window.scrollBy(0, -56);
@@ -30,10 +38,12 @@ function Navbar({ projects }) {
           <button onClick={handleAboutClick} className="text-hover">
             About
           </button>
-          <button onClick={handleExperience} className="text-hover">
+          <button onClick={handleExperienceClick} className="text-hover">
             Experience
           </button>
-          <Dropdown options={projects} />
+          <button onClick={handleProjectsClick} className="text-hover">
+            Projects
+          </button>
         </>
       )}
 
