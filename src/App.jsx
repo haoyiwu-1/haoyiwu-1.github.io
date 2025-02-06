@@ -84,7 +84,7 @@ function App() {
               timePeriod={"Oct 2024 - Dec 2024"}
             />
             <a
-              className="flex flex-row space-x-2 font-bold underline max-w-max"
+              className="flex-row space-x-2 font-bold underline max-w-max hidden"
               href="resources/Resume_-_WenHao_Wu.pdf"
               target="_blank"
             >
