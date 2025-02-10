@@ -1,11 +1,12 @@
+import projects from "../data/projects.json";
 import Footer from "../ui-components/Footer.jsx";
 import Navbar from "../ui-components/Navbar.jsx";
 import SectionDesc from "../ui-components/SectionDesc.jsx";
 
-function Home({ projects }) {
+function Home() {
   return (
     <div className="bg-gradient-to-r from-cyan-900 to-blue-900 sora-font min-h-screen flex flex-col">
-      <Navbar projects={projects} />
+      <Navbar />
       <div className="flex flex-col items-center flex-grow">
         <div className="section space-y-3">
           <h1 className="font-bold text-3xl">WenHao Wu</h1>
@@ -92,86 +93,16 @@ function Home({ projects }) {
 
           <div id="projects" className="section">
             <h1 className="uppercase font-bold">Projects</h1>
-            <SectionDesc
-              id="proj-0"
-              title={projects[0]}
-              description="
-              A responsive web app delivering up-to-date data on popular cryptocurrencies, updating every minute for near real-time tracking. It features a clean, user-friendly design optimized for all devices, with a dark mode for enhanced usability and customizable viewing preferences. GitHub Workflows is configured for automated deployment, ensuring efficient updates and keeping the app current with minimal effort.
-              "
-              links={[
-                {
-                  source: "https://haoyiwu-1.github.io/react-crypto-app/",
-                  text: "Live Demo",
-                },
-                {
-                  source: "https://github.com/haoyiwu-1/react-crypto-app",
-                  text: "GitHub",
-                },
-              ]}
-              tech={["React", "Tailwind CSS", "CoinCap API 2.0"]}
-            />
-
-            <SectionDesc
-              id="proj-1"
-              title={projects[1]}
-              description="
-              An engaging trivia quiz web app with dynamic questions sourced from the Open Trivia Database API. Designed with a clean, user-friendly interface and interactive features, it offers a smooth and enjoyable user experience. Optimized for seamless performance across devices, the app provides a fully responsive interface. GitHub Workflows is set up to automate deployments, streamlining updates and ensuring the app remains consistently up to date.
-              "
-              links={[
-                {
-                  source: "https://haoyiwu-1.github.io/Trivify/",
-                  text: "Live Demo",
-                },
-                {
-                  source: "https://github.com/haoyiwu-1/Trivify",
-                  text: "GitHub",
-                },
-              ]}
-              tech={[
-                "React",
-                "Material UI",
-                "React Hook Form",
-                "Tailwind CSS",
-                "he",
-                "Open Trivia Database API",
-              ]}
-            />
-
-            <SectionDesc
-              id="proj-2"
-              title={projects[2]}
-              description="
-              This project involves big data analytics using Python on a single machine. The analytics were performed on a subset of Yelp's business, review, and user data. I developed four programs to analyze the dataset. The first program, descriptive-analytics.py, performs descriptive analytics on the dataset. The second program, frequency-distributions.py, computes useful frequency distributions from the data. The third program, social-network.py, creates a social network of Yelp friends from the data. The fourth and final program, network-analytics.py, performs basic network analytics on the constructed social network from the third program. For instructions on how to use and explore the programs, please refer to the GitHub link below.
-              "
-              links={[
-                {
-                  source: "https://github.com/haoyiwu-1/BigDataAnalytics",
-                  text: "GitHub",
-                },
-                {
-                  source:
-                    "https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset/versions/3",
-                  text: "Kaggle Dataset",
-                },
-              ]}
-              tech={["Pandas", "networkx", "Matplotlib", "Python"]}
-            />
-
-            <SectionDesc
-              id="proj-3"
-              title={projects[3]}
-              description="
-              This is a portion of a project I completed for my data mining class, where I performed clustering analysis on a dataset. I used K-Means clustering to uncover hidden relationships between the dataset's dimensions. Some pre-processing was required before the dataset could be used, along with other smaller details not mentioned here. The link below provides access to the source code, which can be run on Google Colab. The project is described in much more detail there, and you can download the .ipynb file for a copy of the source code if needed.
-              "
-              links={[
-                {
-                  source:
-                    "https://colab.research.google.com/drive/1Zkyd8Ew9nO5dvCJGr0mvcRVmxpApwalg?usp=sharing",
-                  text: "Live Demo",
-                },
-              ]}
-              tech={["Pandas", "Scikit-learn", "Matplotlib", "Python"]}
-            />
+            {projects.slice(0, 4).map((project, index) => (
+              <SectionDesc
+                key={index}
+                id={`proj-${index}`}
+                title={project.title}
+                description={project.description}
+                links={project.links}
+                tech={project.tech}
+              />
+            ))}
             <a
               className="flex flex-row space-x-2 font-bold underline max-w-max"
               href="/#/projects"

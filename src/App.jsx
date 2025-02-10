@@ -18,13 +18,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route
-          path="/"
-          element={<Home projects={projectsList.slice(0, 4)} />}
-        />
+        <Route path="/" element={<Home />} />
         <Route
           path="/projects"
-          element={<Projects projects={projectsList} />}
+          element={<Projects projectsList={projectsList} />}
         />
       </Routes>
     </div>
