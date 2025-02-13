@@ -24,10 +24,12 @@ function App() {
       : window.location.pathname;
 
     if (window.dataLayer) {
-      window.dataLayer.push({
-        event: "page_view",
-        page_path: pagePath,
-      });
+      setTimeout(() => {
+        window.dataLayer.push({
+          event: "page_view",
+          page_path: pagePath,
+        });
+      }, 200);
     }
   }, [location]);
 
