@@ -19,10 +19,14 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
+    const pagePath = window.location.hash
+      ? window.location.hash.replace("#", "")
+      : window.location.pathname;
+
     if (window.dataLayer) {
       window.dataLayer.push({
         event: "page_view",
-        page_path: location.pathname + location.search,
+        page_path: pagePath,
       });
     }
   }, [location]);
