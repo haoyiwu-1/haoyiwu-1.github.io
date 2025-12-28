@@ -25,11 +25,13 @@ function Home() {
               </p>
               <p>
                 In the past, I've contributed to two startups where I helped
-                develop web applications integrated with AI technologies.
+                develop web applications integrated with AI technologies. I am
+                currently working at Englobe where my primary focus is general
+                automation.
               </p>
               <p>
                 Outside of work, I'm often at the gym setting new personal
-                records or spending quality time with my cat.
+                records, playing chess, or spending quality time with my cat.
               </p>
             </div>
           </div>
@@ -39,11 +41,45 @@ function Home() {
               id="exp-1"
               title={
                 <>
+                  Automation Developer{" "}
+                  <span className="font-sans mx-1">&#x2022;</span> Englobe
+                </>
+              }
+              description="
+              At Englobe, I focus on improving operational reliability and team efficiency through automation. I developed systems to monitor field units across two offices and alert relevant teams of potential data issues, significantly reducing data loss. I also built an air quality notification system for a client that generated $12,000 in profit. Additionally, I created tools to automate the production of various reports and designed user-friendly guides, enabling non-technical team members to leverage these solutions independently. Overall, my work has enhanced workflows, improved data accuracy, and increased operational oversight.
+              "
+              tech={[
+                "Python",
+                "Selenium",
+                "pandas",
+                "openpyxl",
+                "xlwings",
+                "APIs",
+              ]}
+              timePeriod={"March 2025 - Present"}
+            />
+            <SectionDesc
+              id="exp-1"
+              title={
+                <>
+                  Web Developer <span className="font-sans mx-1">&#x2022;</span>{" "}
+                  Convia
+                </>
+              }
+              description="
+              Developed UI features with a focus on performance and cross-device compatibility. Optimized site responsiveness by implementing responsive design principles, ensuring a seamless user experience across all screen sizes.
+              "
+              tech={["Elixir", "JavaScript", "Tailwind CSS"]}
+              timePeriod={"Oct 2024 - Dec 2024"}
+            />
+            <SectionDesc
+              id="exp-2"
+              title={
+                <>
                   Web Developer <span className="font-sans mx-1">&#x2022;</span>{" "}
                   Shopr Live Inc.
                 </>
               }
-              titleLink="https://askshopr.com/"
               description="
               Enhanced the end-user experience by implementing responsive UI features. Translated Figma designs into functional and user-friendly product pages. Optimized site performance through lazy loading, CSS sprite sheets, and image compression, achieving faster page load times.
               "
@@ -57,25 +93,11 @@ function Home() {
               ]}
               timePeriod={"June 2023 - June 2024"}
             />
-            <SectionDesc
-              id="exp-2"
-              title={
-                <>
-                  Web Developer <span className="font-sans mx-1">&#x2022;</span>{" "}
-                  Convia
-                </>
-              }
-              titleLink="https://convia.io/"
-              description="
-              Developed UI features with a focus on performance and cross-device compatibility. Optimized site responsiveness by implementing responsive design principles, ensuring a seamless user experience across all screen sizes.
-              "
-              tech={["Elixir", "JavaScript", "Tailwind CSS"]}
-              timePeriod={"Oct 2024 - Dec 2024"}
-            />
             <a
-              className="flex-row space-x-2 font-bold underline max-w-max hidden"
+              className="flex flex-row items-center space-x-2 font-bold underline max-w-max"
               href="resources/Resume_-_WenHao_Wu.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <h1 className="text-hover">Resume</h1>
               <svg

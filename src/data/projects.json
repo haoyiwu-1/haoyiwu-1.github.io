@@ -1,6 +1,30 @@
 [
   {
-    "title": "React Crypto Web App",
+    "title": "Breezy",
+    "description": "A collaboratively developed full-stack weather web application delivering real-time weather data through a clean, responsive interface optimized for all devices. Designed for smooth user interaction and reliable performance, it is containerized using a Dockerfile and deployed on Google Cloud Platform, for reliable cloud hosting.",
+    "links": [
+      {
+        "source": "https://breezy-app.ca/",
+        "text": "Live Demo"
+      },
+      {
+        "source": "https://github.com/Ezimy/Breezy",
+        "text": "GitHub"
+      }
+    ],
+    "tech": [
+      "React",
+      "Material UI",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "OpenWeatherMap API",
+      "Docker",
+      "Google Cloud Platform"
+    ]
+  },
+  {
+    "title": "Crypto Web App",
     "description": "A responsive web app delivering up-to-date data on popular cryptocurrencies, updating every minute for near real-time tracking. It features a clean, user-friendly design optimized for all devices, with a dark mode for enhanced usability and customizable viewing preferences. GitHub Workflows is configured for automated deployment, ensuring efficient updates and keeping the app current with minimal effort.",
     "links": [
       {
@@ -12,7 +36,7 @@
         "text": "GitHub"
       }
     ],
-    "tech": ["React", "Tailwind CSS", "CoinCap API 2.0"]
+    "tech": ["React", "Tailwind CSS", "CoinCap API 2.0", "GitHub Workflows"]
   },
   {
     "title": "Trivify",
@@ -30,10 +54,11 @@
     "tech": [
       "React",
       "Material UI",
-      "React Hook Form",
       "Tailwind CSS",
+      "React Hook Form",
       "he",
-      "Open Trivia Database API"
+      "Open Trivia Database API",
+      "GitHub Workflows"
     ]
   },
   {
@@ -49,7 +74,7 @@
         "text": "Kaggle Dataset"
       }
     ],
-    "tech": ["Pandas", "networkx", "Matplotlib", "Python"]
+    "tech": ["Python", "Pandas", "networkx", "Matplotlib"]
   },
   {
     "title": "Data Mining Project",
@@ -60,7 +85,7 @@
         "text": "Live Demo"
       }
     ],
-    "tech": ["Pandas", "Scikit-learn", "Matplotlib", "Python"]
+    "tech": ["Python", "Pandas", "Scikit-learn", "Matplotlib"]
   },
   {
     "title": "SmartShoppers",
@@ -79,11 +104,11 @@
         "text": "GitHub"
       }
     ],
-    "tech": ["Java Swing", "Java", "JUnit"]
+    "tech": ["Java", "Java Swing", "JUnit"]
   },
   {
     "title": "Tic-Tac-Toe",
-    "description": "Tic-Tac-Toe for two players on the same computer. The first player is 'X' and the second player is 'O'. The game automatically restarts 5 seconds after it ends, or players can manually reset/restart it using the 'Restart/Reset' button.",
+    "description": "Tic-Tac-Toe for two players on the same computer. The first player is 'X' and the second player is 'O'. The game automatically restarts 5 seconds after it ends, or players can manually reset/restart it using the 'Restart/Reset' button. Deployed using GitHub Workflows, allowing the app to stay live and updated with minimal manual effort.",
     "links": [
       {
         "source": "https://haoyiwu-1.github.io/Tic-Tac-Toe/",
@@ -94,11 +119,11 @@
         "text": "GitHub"
       }
     ],
-    "tech": ["HTML", "CSS", "Bootstrap 5", "JavaScript"]
+    "tech": ["HTML", "CSS", "JavaScript", "Bootstrap 5", "GitHub Workflows"]
   },
   {
     "title": "Basic GPA Calculator",
-    "description": "This is a simple GPA calculator I created during university to calculate my GPA. My university used a 9.0-point scale, but I also included the more commonly used 4.0 scale for broader applicability. I updated the calculator to make it more visually appealing and mobile-friendly, enhancing its usability across devices.",
+    "description": "This is a simple GPA calculator I created during university to calculate my GPA. My university used a 9.0-point scale, but I also included the more commonly used 4.0 scale for broader applicability. I updated the calculator to make it more visually appealing and mobile-friendly, enhancing its usability across devices. The app is maintained via GitHub Workflows, ensuring reliable access and automatic updates.",
     "links": [
       {
         "source": "https://haoyiwu-1.github.io/GPACalculator/",
@@ -109,11 +134,11 @@
         "text": "GitHub"
       }
     ],
-    "tech": ["HTML", "CSS", "Bootstrap 5", "JavaScript"]
+    "tech": ["HTML", "CSS", "JavaScript", "Bootstrap 5", "GitHub Workflows"]
   },
   {
     "title": "Rock-Paper-Scissors",
-    "description": "Rock-Paper-Scissors where player competes against the computer, which makes random choices with no underlying logic/intelligence. The game is played in a best-of-5 format (first to three wins), with the round history displayed. After the game ends, it automatically restarts  after 15 seconds, or players can manually reset/restart it using the 'Restart/Reset' button.",
+    "description": "Rock-Paper-Scissors where player competes against the computer, which makes random choices with no underlying logic/intelligence. The game is played in a best-of-5 format (first to three wins), with the round history displayed. After the game ends, it automatically restarts  after 15 seconds, or players can manually reset/restart it using the 'Restart/Reset' button. Hosted through GitHub Workflows, keeping the project live and up to date seamlessly.",
     "links": [
       {
         "source": "https://haoyiwu-1.github.io/Rock-Paper-Scissors/",
@@ -124,6 +149,6 @@
         "text": "GitHub"
       }
     ],
-    "tech": ["HTML", "CSS", "Bootstrap 5", "JavaScript"]
+    "tech": ["HTML", "CSS", "JavaScript", "Bootstrap 5", "GitHub Workflows"]
   }
 ]

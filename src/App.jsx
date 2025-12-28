@@ -6,7 +6,8 @@ import Projects from "./pages/Projects";
 
 function App() {
   const projectsList = [
-    "React Crypto Web App",
+    "Breezy",
+    "Crypto Web App",
     "Trivify",
     "Big Data Analytics Project",
     "Data Mining Project",
