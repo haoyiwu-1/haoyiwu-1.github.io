@@ -41,7 +41,7 @@ function Home() {
               id="exp-1"
               title={
                 <>
-                  Automation Developer{" "}
+                  Python Application Developer{" "}
                   <span className="font-sans mx-1">&#x2022;</span> Englobe
                 </>
               }
